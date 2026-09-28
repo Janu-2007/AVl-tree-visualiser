@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVL Tree Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AVL Tree Visualizer</h1>
+
+        <div class="controls">
+            <input type="number" id="value" placeholder="Enter number">
+
+            <button onclick="insertNode()">Insert</button>
+
+            <button onclick="deleteNode()">Delete</button>
+
+            <button onclick="clearTree()">Clear</button>
+        </div>
+
+        <p id="message">Enter a number and click Insert</p>
+
+        <div class="tree-area">
+            <svg id="lines"></svg>
+            <div id="tree"></div>
+        </div>
+
+        <div class="output">
+
+            <h2>Traversals</h2>
+
+            <p>
+                <b>Inorder:</b>
+                <span id="inorder">-</span>
+            </p>
+
+            <p>
+                <b>Preorder:</b>
+                <span id="preorder">-</span>
+            </p>
+
+            <p>
+                <b>Postorder:</b>
+                <span id="postorder">-</span>
+            </p>
+
+            <p>
+                <b>Last Rotation:</b>
+                <span id="rotation">None</span>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
